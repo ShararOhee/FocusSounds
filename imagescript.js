@@ -13,6 +13,14 @@ switcher.addEventListener('click', () =>{
         const bg = images[Math.floor(Math.random()*images.length)];
         document.getElementById("main").style.backgroundImage = bg;
         document.getElementById("nav").style.backgroundImage = bg;
+        console.log('Background Changed');
 
 });
 
+var slider = document.getElementById("sound-range1");
+var output = document.getElementById("value1");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}

@@ -36,6 +36,9 @@ body {
     text-decoration: none;
     color: black;
 }
+.nav-sounds:hover{
+    opacity: .5;
+}
 .nav-timer{
     margin: 10px;
     background-color: lightcoral;
@@ -45,6 +48,22 @@ body {
     font-size: 25px;
     text-decoration: none;
     color: black;
+}
+.nav-timer:hover{
+    opacity: .5;
+}
+.nav-login{
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    color: white;
+    height: 100%;
+    width: 125px;
+    border-radius: 50px;
+}
+.nav-login:hover{
+    opacity: .5;
+    cursor: pointer;
 }
 a{
     display: flex;
@@ -59,18 +78,23 @@ a{
     border-radius: 50px;
     background-image: url(/images/CityRain.gif);
     background-size: cover;
+    justify-content: center;
     position: relative;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .slider{
     height: 20vh;
-    width: 30vw;
-    background-color: grey;
+    width: 32vw;
+    background-color: black;
     border-radius: 50px;
-    margin-top: 15px;
-    display: inline-block;
-
+    margin:auto;
+    color: white;
+    display: flex;
+    position: relative;
 }
+
 #switcher{
     height: 50px;
     width: 50px;
@@ -82,4 +106,31 @@ a{
     background-image: url(images/switch.png);
     background-size: cover;
     border: none;
+}
+.sound-range{
+    position: relative;
+    width: 90%;
+
+}
+.range-container{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    margin-top: auto;
+    left: -40px;
+    
+
+}
+.slider-text{
+    position: relative;
+    left: 15%;
+    font-size: x-large;
+
+}
+.value{
+    position: relative;
+    right: 25%;
+    font-size: xx-large;
+    color: darkslategray;
 }

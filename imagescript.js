@@ -17,10 +17,33 @@ switcher.addEventListener('click', () =>{
 
 });
 
-var slider = document.getElementById("sound-range1");
-var output = document.getElementById("value1");
-output.innerHTML = slider.value;
+var slider1 = document.getElementById("sound-range1");
+var output1 = document.getElementById("value1");
+output1.innerHTML = slider1.value;
+let audio1 = new Audio('/audios/Rain(30).mp3');
+audio1.play();
+audio1.volume = 0;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+audio1.addEventListener('ended', function() {
+  this.currentTime = 0;
+  this.play();
+}, false);
+
+
+
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+  audio1.volume = (this.value/100);
+}
+
+
+
+var slider2 = document.getElementById("sound-range2");
+var output2 = document.getElementById("value2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+  //audio1.volume = (this.value/100);
 }

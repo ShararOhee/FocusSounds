@@ -114,13 +114,11 @@ a{
 }
 .range-container{
     height: 30px;
-    width: 100%;
-    position: relative;
+    width: 90%;
+    position: absolute;
     bottom: 0px;
     margin-top: auto;
-    left: -40px;
-    
-
+    left: 10%;
 }
 .slider-text{
     position: relative;
@@ -129,7 +127,7 @@ a{
 
 }
 .value{
-    position: relative;
+    position: absolute;
     right: 25%;
     font-size: xx-large;
     color: darkslategray;

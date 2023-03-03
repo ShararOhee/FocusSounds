@@ -121,7 +121,7 @@ a{
     left: 10%;
 }
 .slider-text{
-    position: relative;
+    position: absolute;
     left: 15%;
     font-size: x-large;
 
@@ -132,3 +132,15 @@ a{
     font-size: xx-large;
     color: darkslategray;
 }
+.soundon{
+    position: absolute;
+    left: 15%;
+    top: 0px;
+    z-index: 4;
+}
+.soundonbox{
+    z-index: 5;
+}
+
+
+

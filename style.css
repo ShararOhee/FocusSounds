@@ -52,7 +52,7 @@ body {
 .nav-timer:hover{
     opacity: .5;
 }
-.nav-login{
+/*.nav-login{
     position: absolute;
     right: 50px;
     font-size: 20px;
@@ -60,7 +60,7 @@ body {
     height: 100%;
     width: 125px;
     border-radius: 50px;
-}
+} */
 .nav-login:hover{
     opacity: .5;
     cursor: pointer;

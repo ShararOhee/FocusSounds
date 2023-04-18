@@ -31,7 +31,7 @@ check1.addEventListener('change', e => {
   if(e.target.checked === true) {
     console.log("Checkbox is checked - boolean value: ", e.target.checked)
     audio1.play();
-    audio1.volume = slider1.value;
+    audio1.volume = (slider1.value/100);
   }
 if(e.target.checked === false) {
     console.log("Checkbox is not checked - boolean value: ", e.target.checked)
@@ -75,7 +75,7 @@ check2.addEventListener('change', e => {
   if(e.target.checked === true) {
     console.log("Checkbox is checked - boolean value: ", e.target.checked)
     audio2.play();
-    audio2.volume = slider2.value;
+    audio2.volume = (slider2.value/100);
   }
 if(e.target.checked === false) {
     console.log("Checkbox is not checked - boolean value: ", e.target.checked)
@@ -118,7 +118,7 @@ check3.addEventListener('change', e => {
   if(e.target.checked === true) {
     console.log("Checkbox is checked - boolean value: ", e.target.checked)
     audio3.play();
-    audio3.volume = slider3.value;
+    audio3.volume = (slider3.value/100);
   }
 if(e.target.checked === false) {
     console.log("Checkbox is not checked - boolean value: ", e.target.checked)
@@ -152,7 +152,7 @@ slider3.oninput = function() {
 var slider4 = document.getElementById("sound-range4");
 var output4 = document.getElementById("value4");
 output4.innerHTML = slider4.value;
-let audio4 = new Audio('/audios/Wind.mp3');
+let audio4 = new Audio('/audios/CityTraffic.mp3');
 
 
 var check4 = document.getElementById("soundon4");
@@ -161,7 +161,7 @@ check4.addEventListener('change', e => {
   if(e.target.checked === true) {
     console.log("Checkbox is checked - boolean value: ", e.target.checked)
     audio4.play();
-    audio4.volume = slider4.value;
+    audio4.volume = (slider4.value/100);
   }
 if(e.target.checked === false) {
     console.log("Checkbox is not checked - boolean value: ", e.target.checked)
@@ -195,7 +195,7 @@ slider4.oninput = function() {
 var slider5 = document.getElementById("sound-range5");
 var output5 = document.getElementById("value5");
 output5.innerHTML = slider5.value;
-let audio5 = new Audio('/audios/Wind.mp3');
+let audio5 = new Audio('/audios/CafeAmbience.mp3');
 
 var check5 = document.getElementById("soundon5");
 
@@ -203,7 +203,7 @@ check5.addEventListener('change', e => {
   if(e.target.checked === true) {
     console.log("Checkbox is checked - boolean value: ", e.target.checked)
     audio5.play();
-    audio5.volume = slider5.value;
+    audio5.volume = (slider5.value/100);
   }
 if(e.target.checked === false) {
     console.log("Checkbox is not checked - boolean value: ", e.target.checked)
@@ -238,7 +238,7 @@ slider5.oninput = function() {
 var slider6 = document.getElementById("sound-range6");
 var output6 = document.getElementById("value6");
 output6.innerHTML = slider6.value;
-let audio6 = new Audio('/audios/Wind.mp3');
+let audio6 = new Audio('/audios/LateNightJazz.mp3');
 
 var check6 = document.getElementById("soundon6");
 
@@ -246,7 +246,7 @@ check6.addEventListener('change', e => {
   if(e.target.checked === true) {
     console.log("Checkbox is checked - boolean value: ", e.target.checked)
     audio6.play();
-    audio6.volume = slider6.value;
+    audio6.volume = (slider6.value/100);
   }
 if(e.target.checked === false) {
     console.log("Checkbox is not checked - boolean value: ", e.target.checked)

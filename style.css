@@ -141,6 +141,14 @@ a{
 .soundonbox{
     z-index: 5;
 }
-
-
-
+.timer-menu{
+    position: absolute;
+    right: 0px;
+    visibility: hidden;
+    background-color: lightcoral;
+    z-index: 6;
+    width: 40%;
+    height: 90%;
+    top: 7%;
+    border-radius: 50px 0px 0px 50px;
+}

@@ -8,6 +8,15 @@ switcher.addEventListener('click', () =>{
         "url(/images/drops.gif)",
         "url(/images/rainy.gif)",
         "url(/images/garden.gif)",
+        "url(/images/totoro-gif.gif)",
+        "url(/images/fs-gif1.gif)",
+        "url(/images/fs-gif2.gif)",
+        "url(/images/fs-gif3.gif)",
+        "url(/images/fs-gif4.gif)",
+        "url(/images/fs-gif5.gif)",
+        "url(/images/fs-gif6.gif)",
+        "url(/images/fs-gif7.gif)",
+        "url(/images/fs-gif8.gif)"
         ]
 
         const bg = images[Math.floor(Math.random()*images.length)];
@@ -276,3 +285,23 @@ slider6.oninput = function() {
 }
 
 //////////////////////////////////////////
+
+
+//    TIMER CODE
+
+
+//////////////////////////////////////////
+
+let timernavbtn = document.getElementById("timer-navbtn");
+let menuhidden = 0;
+timernavbtn.addEventListener('click', () =>{
+  console.log('Timer Nav Button Clicked');
+  if(menuhidden == 0){
+  document.getElementById("timer-menu").style.visibility = "visible";
+  menuhidden = 1;
+ } else if(menuhidden == 1){
+  document.getElementById("timer-menu").style.visibility = "hidden";
+  menuhidden = 0;
+ }
+});
+

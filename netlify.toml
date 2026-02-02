@@ -1,0 +1,15 @@
+[build]
+  # Use the latest build image
+  publish = "."
+  
+[build.environment]
+  # Specify Node.js version for the build image (22+ recommended for Agent Runners)
+  NODE_VERSION = "22"
+
+[build.processing]
+  # Disable legacy prerendering
+  skip_processing = false
+
+# Disable prerendering explicitly
+[prerender]
+  enabled = false
